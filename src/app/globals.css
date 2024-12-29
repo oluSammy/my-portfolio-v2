@@ -39,18 +39,18 @@ body {
 
 @keyframes side_up {
   0% {
-    transform: translateY(60%);
+    transform: translateY(10%);
   }
   20% {
     transform: translateY(0%);
   }
-  35%, 45% {
+  25%, 35% {
     transform: translateY(-100%);
   }
-  50%, 60% {
+  40%, 50% {
     transform: translateY(-200%);
   }
-  65%, 100% {
+  55%, 100% {
     transform: translateY(-300%);
   }
 }
