@@ -74,9 +74,9 @@ const Hero = () => {
       <Socials />
       <Link
         href="#about"
-        className="absolute bottom-20 md:bottom-40 right-10 md:right-20 w-16 h-16 bg-green-100 flex items-center justify-center rounded-full cursor-pointer"
+        className="absolute bottom-10 md:bottom-40 right-5 md:right-20 w-10 h-10 bg-green-100 flex items-center justify-center rounded-full cursor-pointer"
       >
-        <div className="w-8 h-8 bg-black flex items-center justify-center rounded-full">
+        <div className="w-6 h-6 bg-black flex items-center justify-center rounded-full">
           <FaArrowDown className="text-green-100" />
         </div>
       </Link>
