@@ -29,8 +29,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="md:col-span-6 col-span-12 md:mt-0 mt-20  ">
-          <figure className="h-[600px] md:w-[500px] w-[370px]">
+        <div className="md:col-span-6 col-span-12 md:mt-0 mt-20 flex justify-center items-center">
+          <figure className="h-[600px] md:w-[500px] sm:w-[350px] w-[320px]">
             <div className="h-full w-full bg-black rounded-2xl">
               <Image
                 src="/olumorin-samuel.JPG"
