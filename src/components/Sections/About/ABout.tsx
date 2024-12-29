@@ -9,7 +9,7 @@ const About = () => {
         <div className="md:col-span-6 col-span-12">
           <div className="flex items-center gap-x-8">
             <Header />
-            <p className="h-[1px] w-1/5 md:w-3/6 bg-gray-650"></p>
+            <p className="h-[1px] w-2/5 md:w-3/6 bg-gray-650"></p>
           </div>
 
           <div className="mt-12 px-2">
@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="md:col-span-5 col-span-12 flex ">
+        <div className="md:col-span-6 col-span-12 flex ">
           <figure className="h-[600px] md:w-[500px] w-[370px]">
             <div className="h-full w-full bg-black rounded-2xl">
               <Image
