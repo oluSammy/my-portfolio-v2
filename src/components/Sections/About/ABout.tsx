@@ -5,29 +5,14 @@ import React from "react";
 const About = () => {
   return (
     <div id="about" className="bg-white py-20">
-      <div className="container mx-auto grid grid-cols-12 gap-10">
-        <div className="col-span-6">
+      <div className="container px-2 md:px-0 mx-auto grid grid-cols-12 gap-10 ">
+        <div className="md:col-span-6 col-span-12">
           <div className="flex items-center gap-x-8">
             <Header />
-            <p className="h-[1px] w-3/6 bg-gray-650"></p>
+            <p className="h-[1px] w-1/5 md:w-3/6 bg-gray-650"></p>
           </div>
 
-          <div className="mt-12">
-            {/* <p className="text-black text-xl font-extralight font-outfit text-justify">
-              As a{" "}
-              <span className="font-medium">
-                results-driven software developer
-              </span>
-              , I harness my analytical expertise to design and deliver secure,
-              innovative, and efficient web applications. With three years of
-              hands-on experience, I specialize in coding dynamic solutions
-              using modern technologies like{" "}
-              <span className="font-medium">
-                Node.js, React, and JavaScript
-              </span>
-              . My approach focuses on merging functionality with user-centered
-              design to create seamless digital experiences.
-            </p> */}
+          <div className="mt-12 px-2">
             <p className="text-black text-xl font-extralight font-outfit text-justify">
               When I’m not diving into code, I’m constantly seeking ways to
               challenge the norm and deliver beyond expectations. My work spans
@@ -44,8 +29,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6">
-          <figure className="h-[600px] w-[500px]">
+        <div className="md:col-span-5 col-span-12 flex ">
+          <figure className="h-[600px] md:w-[500px] w-[370px]">
             <div className="h-full w-full bg-black rounded-2xl">
               <Image
                 src="/olumorin-samuel.JPG"

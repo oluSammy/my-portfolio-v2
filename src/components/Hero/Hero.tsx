@@ -21,12 +21,12 @@ const Hero = () => {
       <Navigation />
 
       <div className="container mx-auto mt-48 ">
-        <div className="ml-32">
+        <div className="md:ml-32 ml-16">
           <div className="mb-10">
             <h4 className="text-green-100 text-2xl">Hi, my name is</h4>
-            <h1 className="text-6xl font-normal text-white">Samuel Olumorin</h1>
+            <h1 className=" text-4xl md:text-6xl font-normal text-white">Samuel Olumorin</h1>
 
-            <h2 className="text-2xl font-normal text-white flex items-start gap-x-2">
+            <h2 className="text-base md:text-2xl font-normal text-white flex items-start gap-x-2">
               <ol className="list-none h-8 overflow-hidden leading-8">
                 <li className="li-animation animate-bounce">
                   <span className="whitespace-nowrap text-green-100 ">
@@ -55,7 +55,7 @@ const Hero = () => {
             style={{
               whiteSpace: "pre-line",
             }}
-            className="text-5xl font-extralight font-outfit text-gray-50 mt-16"
+            className="text-3xl md:text-5xl font-extralight font-outfit text-gray-50 mt-16"
             sequence={[
               `Crafting Code,\nCreating Possibilities!`,
               5000,
@@ -74,7 +74,7 @@ const Hero = () => {
       <Socials />
       <Link
         href="#about"
-        className="absolute bottom-40 right-20 w-16 h-16 bg-green-100 flex items-center justify-center rounded-full cursor-pointer"
+        className="absolute bottom-20 md:bottom-40 right-10 md:right-20 w-16 h-16 bg-green-100 flex items-center justify-center rounded-full cursor-pointer"
       >
         <div className="w-8 h-8 bg-black flex items-center justify-center rounded-full">
           <FaArrowDown className="text-green-100" />

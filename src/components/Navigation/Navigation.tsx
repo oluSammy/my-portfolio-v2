@@ -24,9 +24,9 @@ const Navigation = () => {
   const [active, setActive] = useState("");
 
   return (
-    <div className="flex justify-between p-4 items-center">
+    <div className="flex justify-between flex-wrap p-4 items-center">
       <Logo />
-      <div className="flex gap-4 glass glass-border rounded-full px-8 gap-x-8 py-2 ">
+      <div className=" md:order-1 order-2 hidden md:flex gap-4 glass glass-border  rounded-full px-8 gap-x-8 py-2 ">
         {navLinks.map((link) => {
           const isActive = active === link.link;
 
@@ -34,7 +34,7 @@ const Navigation = () => {
             <Link
               key={link.name}
               href={link.link}
-              className={`text-sm px-6 rounded-full py-2 relative font-outfit ${
+              className={`text-xs md:text-sm px-6 rounded-full  py-2 relative font-outfit ${
                 isActive
                   ? "border font-semibold text-base glass"
                   : "font-normal text-gray-450"
@@ -52,7 +52,7 @@ const Navigation = () => {
       <Link
         href="https://docs.google.com/document/d/1wj0gCp8ErcemZ9zCbuYoqwIzAXrdeJcJ/edit"
         target="_blank"
-        className="flex items-center font-outfit gap-2 text-green-100 font-medium glass px-6 py-4 glass-border rounded-full hover:scale-105 transition-all duration-300"
+        className="flex md:order-2 order-1 items-center font-outfit gap-2 text-green-100 font-medium glass px-6 py-4 glass-border rounded-full hover:scale-105 transition-all duration-300"
       >
         Resume
         <FaArrowRight className="-rotate-45" />
