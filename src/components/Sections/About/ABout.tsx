@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-white py-20">
+    <div id="about" className="bg-white py-20">
       <div className="container mx-auto grid grid-cols-12 gap-10">
         <div className="col-span-6">
           <div className="flex items-center gap-x-8">

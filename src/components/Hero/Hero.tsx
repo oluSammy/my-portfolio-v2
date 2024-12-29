@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React, { CSSProperties, useEffect, useRef, useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import { FiLinkedin } from "react-icons/fi";
 import { CiTwitter } from "react-icons/ci";
@@ -10,50 +9,12 @@ import { FaInstagram } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import {
-  useTransition,
-  animated,
-  AnimatedProps,
-  useSpringRef,
-} from "@react-spring/web";
+import { useRef } from "react";
 
 const repeatCount = 3;
-const AnimatedDiv = animated(`div`);
 
 const Hero = () => {
   const counter = useRef(0);
-
-  const pages: ((
-    props: AnimatedProps<{ style: CSSProperties }>
-  ) => React.ReactElement)[] = [
-    ({ style }) => <AnimatedDiv style={{ ...style }}>Software</AnimatedDiv>,
-    ({ style }) => <AnimatedDiv style={{ ...style }}>Backend</AnimatedDiv>,
-    ({ style }) => <AnimatedDiv style={{ ...style }}>Frontend</AnimatedDiv>,
-    ({ style }) => <AnimatedDiv style={{ ...style }}>Fullstack</AnimatedDiv>,
-  ];
-
-  const [index, set] = useState(0);
-
-  useEffect(() => {
-    setInterval(() => {
-      set((state) => (state + 1) % 3);
-    }, 4000);
-  }, []);
-
-  const transRef = useSpringRef();
-  const transitions = useTransition(index, {
-    ref: transRef,
-    keys: null,
-    from: { opacity: 0, transform: "translate3d(0,0%,0)" },
-    enter: { opacity: 1, transform: "translate3d(0,0%,0)" },
-    leave: { opacity: 0, transform: "translate3d(0,0%,0)" },
-    // from: { opacity: 0 },
-    // enter: { opacity: 1 },
-    // leave: { opacity: 1 },
-  });
-  useEffect(() => {
-    transRef.start();
-  }, [index]);
 
   return (
     <div className="h-screen w-full bg-primary-100 font-brolimo relative">
@@ -66,12 +27,26 @@ const Hero = () => {
             <h1 className="text-6xl font-normal text-white">Samuel Olumorin</h1>
 
             <h2 className="text-2xl font-normal text-white flex items-start gap-x-2">
-              <div>
-                {transitions((style, i) => {
-                  const Page = pages[i];
-                  return <Page style={style} />;
-                })}
-              </div>{" "}
+              <ol className="list-none h-8 overflow-hidden leading-8">
+                <li className="li-animation animate-bounce">
+                  <span className="whitespace-nowrap text-green-100 ">
+                    Frontend
+                  </span>
+                </li>
+                <li className="li-animation">
+                  <span className="whitespace-nowrap">
+                    <span className="text-green-100">Back</span>end
+                  </span>
+                </li>
+                <li className="li-animation">
+                  <span className="whitespace-nowrap">Fullstack</span>
+                </li>
+                <li className="li-animation">
+                  <span className="whitespace-nowrap">
+                    So<span className="text-green-100">f</span>tware
+                  </span>{" "}
+                </li>
+              </ol>
               <span>Engineer</span>
             </h2>
           </div>
@@ -97,11 +72,14 @@ const Hero = () => {
         </div>
       </div>
       <Socials />
-      <div className="absolute bottom-40 right-20 w-16 h-16 bg-green-100 flex items-center justify-center rounded-full cursor-pointer">
+      <Link
+        href="#about"
+        className="absolute bottom-40 right-20 w-16 h-16 bg-green-100 flex items-center justify-center rounded-full cursor-pointer"
+      >
         <div className="w-8 h-8 bg-black flex items-center justify-center rounded-full">
           <FaArrowDown className="text-green-100" />
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
