@@ -5,7 +5,7 @@ import React from "react";
 const About = () => {
   return (
     <div id="about" className="bg-white py-20">
-      <div className="container px-2 md:px-0 mx-auto grid grid-cols-12 gap-10 ">
+      <div className="container px-2 md:px-0 mx-auto grid grid-cols-12 gap-0 md:gap-10 ">
         <div className="md:col-span-6 col-span-12">
           <div className="flex items-center gap-x-8">
             <Header />
