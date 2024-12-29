@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="md:col-span-6 col-span-12 flex ">
+        <div className="md:col-span-6 col-span-12 md:mt-0 mt-6  ">
           <figure className="h-[600px] md:w-[500px] w-[370px]">
             <div className="h-full w-full bg-black rounded-2xl">
               <Image
