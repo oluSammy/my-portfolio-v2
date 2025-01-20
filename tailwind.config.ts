@@ -17,10 +17,12 @@ export default {
         },
         green: {
           100: "#05FF69",
-          50: "#A3FFC8"
+          50: "#A3FFC8",
+          15: "#263942"
         },
         gray: {
           50: "#97A0B9",
+          75: "#3D3D3D",
           150: "#F2F2F280",
           250: "#A7A7A7",
           350: "#A9A9A9",
@@ -29,13 +31,17 @@ export default {
           650: "#BEB8B8"
         },
         blue: {
-          50: "#16D7FF"
+          50: "#16D7FF",
+          55: "#0E0E1E"
         }
       },
       fontFamily: {
         brolimo: ["var(--font-brolimo)"],
         outfit: ["var(--font-outfit)"],
       },
+      backgroundImage: {
+        "project-bg": "background: radial-gradient(circle, rgba(37,37,37,1) 7%, rgba(16,16,16,1) 85%)",
+      }
     },
   },
   plugins: [],

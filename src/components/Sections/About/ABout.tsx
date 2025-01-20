@@ -8,7 +8,7 @@ const About = () => {
       <div className="container px-2 md:px-0 mx-auto grid grid-cols-12 gap-0 md:gap-10 ">
         <div className="md:col-span-6 col-span-12">
           <div className="flex items-center gap-x-8">
-            <Header />
+            <Header title="About Me" />
             <p className="h-[1px] w-2/5 md:w-3/6 bg-gray-650"></p>
           </div>
 
