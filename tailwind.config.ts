@@ -41,6 +41,7 @@ export default {
       },
       backgroundImage: {
         "project-bg": "background: radial-gradient(circle, rgba(37,37,37,1) 7%, rgba(16,16,16,1) 85%)",
+        "waz-bg": "background-image: linear-gradient(to right top, #c45bf9, #a539a4, #75245f, #3f172b, #000000)"
       }
     },
   },

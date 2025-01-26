@@ -47,7 +47,7 @@ const Hero = () => {
                   </span>{" "}
                 </li>
               </ol>
-              <span>Engineer</span>
+              <span className="md:mt-0 mt-1">Engineer</span>
             </h2>
           </div>
 
