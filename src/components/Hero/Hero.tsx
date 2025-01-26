@@ -24,7 +24,9 @@ const Hero = () => {
         <div className="md:ml-32 ml-16">
           <div className="mb-10">
             <h4 className="text-green-100 text-2xl">Hi, my name is</h4>
-            <h1 className=" text-4xl md:text-6xl font-normal text-white">Samuel Olumorin</h1>
+            <h1 className=" text-4xl md:text-6xl font-normal text-white">
+              Samuel Olumorin
+            </h1>
 
             <h2 className="text-base md:text-2xl font-normal text-white flex items-start gap-x-2">
               <ol className="list-none h-8 overflow-hidden leading-8">
@@ -86,7 +88,7 @@ const Hero = () => {
 
 const Socials = () => {
   return (
-    <div className="flex flex-col gap-y-6 absolute items-center bottom-32 text-gray-550 left-10 ">
+    <div className="flex flex-col gap-y-6 absolute items-center bottom-1/2 translate-y-1/2 text-gray-550 md:left-10 left-5 ">
       <Link
         href={"https://www.linkedin.com/in/samuel-olumorin/"}
         target="_blank"
